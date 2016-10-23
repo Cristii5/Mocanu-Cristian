@@ -13,6 +13,8 @@ c1=a*b % rezultatul este 21, o matrice de tip 1x1
 c2=b*a % rezultatul este o matrice de tip 21x21
 
 % punctul c): 
-% inmultirea element cu element a vectorilor a si b va avea ca rezultat c1,
-% acesta fiind 21, rezultatul inmultirii a*b.
-
+% inmultirea element cu element a vectorilor a si b (a.*b) nu va putea fi
+% realizabila, deoarece difera dimensiunile lor. Daca ar fi fost
+% a.*b' ar fi mers, deoarece am fi transpus vectorul 'b', rezultand astfel
+% intr-un vector identic ca si dimensiune cu vectorul 'a'.
+c3=a.*b' 
